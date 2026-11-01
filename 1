@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main()
+{
+    int x{}, y{ 0 };
+    do
+    {
+        std::cout << "Enter an integer or the number '0' to finish:" << std::endl;
+        std::cin >> x;
+        y += x;
+    } while (x!=0);
+
+    std::cout << "Sum: " << y << std::endl;
+    return EXIT_SUCCESS;
+
+}
